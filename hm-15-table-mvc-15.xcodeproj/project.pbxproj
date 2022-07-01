@@ -58,13 +58,45 @@
 			children = (
 				F145EDEE286E25C700E8BD75 /* AppDelegate.swift */,
 				F145EDF0286E25C700E8BD75 /* SceneDelegate.swift */,
-				F145EDF2286E25C700E8BD75 /* ViewController.swift */,
-				F145EDF4286E25C700E8BD75 /* Main.storyboard */,
-				F145EDF7286E25C900E8BD75 /* Assets.xcassets */,
-				F145EDF9286E25C900E8BD75 /* LaunchScreen.storyboard */,
+				F145EE05286F0FE000E8BD75 /* Resources */,
+				F145EE02286F0DD400E8BD75 /* Model */,
+				F145EE03286F0DDB00E8BD75 /* View */,
+				F145EE04286F0DE000E8BD75 /* Controller */,
 				F145EDFC286E25C900E8BD75 /* Info.plist */,
 			);
 			path = "hm-15-table-mvc-15";
+			sourceTree = "<group>";
+		};
+		F145EE02286F0DD400E8BD75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F145EE03286F0DDB00E8BD75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F145EE04286F0DE000E8BD75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F145EDF2286E25C700E8BD75 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F145EE05286F0FE000E8BD75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F145EDF4286E25C700E8BD75 /* Main.storyboard */,
+				F145EDF7286E25C900E8BD75 /* Assets.xcassets */,
+				F145EDF9286E25C900E8BD75 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
