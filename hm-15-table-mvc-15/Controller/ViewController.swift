@@ -1,17 +1,17 @@
-//
-//  ViewController.swift
-//  hm-15-table-mvc-15
-//
-//  Created by Виктор Ковалевский on 30.06.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    private let tableView: UITableView = {
+        let table = UITableView(frame: .zero, style: .grouped)
+        return table
+    }()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        view.addSubview(tableView)
     }
 
 
