@@ -17,6 +17,7 @@ extension ViewController: UITableViewDataSource {
 //    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let model = models[indexPath.section].options[indexPath.row]
+
             switch model.self {
             case .staticCell(let model):
                 guard let cell = tableView.dequeueReusableCell(
@@ -36,26 +37,16 @@ extension ViewController: UITableViewDataSource {
                 }
                 cell.configure(with: model)
                 return cell
-            case .addLabelCell(model: let model):
-                guard let cell = tableView.dequeueReusableCell(
-                    withIdentifier: AdditionalLabelTableViewCell.identifier,
-                    for: indexPath
-                ) as? AdditionalLabelTableViewCell else  {
-                    return UITableViewCell()
-                }
-                cell.configure(with: model)
-                return cell
-            case .notificationCell(model: let model):
-                guard let cell = tableView.dequeueReusableCell(
-                    withIdentifier: NotificationTableViewCell.identifier,
-                    for: indexPath
-                ) as? NotificationTableViewCell else  {
-                    return UITableViewCell()
-                }
-                cell.configure(with: model)
-                return cell
+
+//            case .notificationCell(model: let model):
+//                guard let cell = tableView.dequeueReusableCell(
+//                    withIdentifier: NotificationTableViewCell.identifier,
+//                    for: indexPath
+//                ) as? NotificationTableViewCell else  {
+//                    return UITableViewCell()
+//                }
+//                cell.configure(with: model)
+//                return cell
             }
     }
-
-
 }

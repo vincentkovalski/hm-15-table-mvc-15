@@ -1,7 +1,6 @@
 import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         if #available(iOS 15, *) {
@@ -15,13 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                UITabBar.appearance().standardAppearance = tabBarAppearance
                UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
               }
-
-        let navigationController = UINavigationController(rootViewController: ViewController())
-
-        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
-
         return true
     }
 }
