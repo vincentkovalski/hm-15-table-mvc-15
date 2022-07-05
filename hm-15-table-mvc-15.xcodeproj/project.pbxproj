@@ -18,8 +18,6 @@
 		F145EE0E286F2B7E00E8BD75 /* ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145EE0D286F2B7E00E8BD75 /* ViewDelegate.swift */; };
 		F145EE102872DED300E8BD75 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145EE0F2872DED300E8BD75 /* SettingTableViewCell.swift */; };
 		F145EE142872E37000E8BD75 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145EE132872E37000E8BD75 /* SwitchTableViewCell.swift */; };
-		F145EE162872E38900E8BD75 /* AdditionalLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145EE152872E38900E8BD75 /* AdditionalLabelTableViewCell.swift */; };
-		F145EE182872E3A400E8BD75 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F145EE172872E3A400E8BD75 /* NotificationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +34,6 @@
 		F145EE0D286F2B7E00E8BD75 /* ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegate.swift; sourceTree = "<group>"; };
 		F145EE0F2872DED300E8BD75 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		F145EE132872E37000E8BD75 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
-		F145EE152872E38900E8BD75 /* AdditionalLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalLabelTableViewCell.swift; sourceTree = "<group>"; };
-		F145EE172872E3A400E8BD75 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +82,6 @@
 				F145EE08286F1D7B00E8BD75 /* ModelSetup.swift */,
 				F145EE0F2872DED300E8BD75 /* SettingTableViewCell.swift */,
 				F145EE132872E37000E8BD75 /* SwitchTableViewCell.swift */,
-				F145EE152872E38900E8BD75 /* AdditionalLabelTableViewCell.swift */,
-				F145EE172872E3A400E8BD75 /* NotificationTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,10 +199,8 @@
 				F145EDEF286E25C700E8BD75 /* AppDelegate.swift in Sources */,
 				F145EE142872E37000E8BD75 /* SwitchTableViewCell.swift in Sources */,
 				F145EE0B286F236C00E8BD75 /* DataSource.swift in Sources */,
-				F145EE162872E38900E8BD75 /* AdditionalLabelTableViewCell.swift in Sources */,
 				F145EDF1286E25C700E8BD75 /* SceneDelegate.swift in Sources */,
 				F145EE0E286F2B7E00E8BD75 /* ViewDelegate.swift in Sources */,
-				F145EE182872E3A400E8BD75 /* NotificationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

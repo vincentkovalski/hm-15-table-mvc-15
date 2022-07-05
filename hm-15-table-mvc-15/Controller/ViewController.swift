@@ -7,8 +7,6 @@ class ViewController: UIViewController {
         let table = UITableView(frame: .zero, style: .grouped)
         table.register(SettingTableViewCell.self, forCellReuseIdentifier: SettingTableViewCell.identifier)
         table.register(SwitchTableViewCell.self, forCellReuseIdentifier: SwitchTableViewCell.identifier)
-        table.register(AdditionalLabelTableViewCell.self, forCellReuseIdentifier: AdditionalLabelTableViewCell.identifier)
-        table.register(NotificationTableViewCell.self, forCellReuseIdentifier: NotificationTableViewCell.identifier)
         return table
     }()
 

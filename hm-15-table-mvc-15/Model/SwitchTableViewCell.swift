@@ -68,7 +68,6 @@ class SwitchTableViewCell: UITableViewCell {
         label.text = model.title
         iconImageView.image = model.icon
         iconContainer.backgroundColor = model.iconBackgroundColor
-        // вот что это ?
         mySwitch.isOn = model.isOn
     }
 }
