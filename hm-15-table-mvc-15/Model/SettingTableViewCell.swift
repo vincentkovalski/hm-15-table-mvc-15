@@ -1,7 +1,6 @@
 import UIKit
 class SettingTableViewCell: UITableViewCell {
     static let identifier = "SettingTableViewCell"
-
     private let NotifContainer: UIView = {
         let view = UIView()
         view.clipsToBounds = true
@@ -14,7 +13,6 @@ class SettingTableViewCell: UITableViewCell {
         label.numberOfLines = 1
         return label
     }()
-
     private let additionalLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
@@ -59,46 +57,31 @@ class SettingTableViewCell: UITableViewCell {
         super.layoutSubviews()
         let size: CGFloat = contentView.frame.size.height - 12
         let imageSize: CGFloat = size/1.5
-
-
         NotifContainer.translatesAutoresizingMaskIntoConstraints = false
         NotifContainer.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
         NotifContainer.heightAnchor.constraint(equalToConstant: size).isActive = true
         NotifContainer.widthAnchor.constraint(equalToConstant: size).isActive = true
         NotifContainer.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 6).isActive = true
-
-
         labelNotif.translatesAutoresizingMaskIntoConstraints = false
         labelNotif.heightAnchor.constraint(equalToConstant: size).isActive = true
         labelNotif.widthAnchor.constraint(equalToConstant: size).isActive = true
         labelNotif.leadingAnchor.constraint(equalTo: NotifContainer.leadingAnchor, constant: 11).isActive = true
         labelNotif.trailingAnchor.constraint(equalTo: NotifContainer.trailingAnchor, constant: 0).isActive = true
-
         labelNotif.topAnchor.constraint(equalTo: NotifContainer.topAnchor, constant: 5).isActive = true
         labelNotif.bottomAnchor.constraint(equalTo: NotifContainer.bottomAnchor, constant: -5).isActive = true
-//        let horizontalConstraintLabel = labelNotif.centerXAnchor.constraint(equalTo: NotifContainer.centerXAnchor)
-//        let verticalConstraintLabel = labelNotif.centerYAnchor.constraint(equalTo: NotifContainer.centerYAnchor)
-//        NSLayoutConstraint.activate([horizontalConstraintLabel, verticalConstraintLabel])
-
-
-        //additionalLabel.sizeToFit()
         additionalLabel.translatesAutoresizingMaskIntoConstraints = false
         additionalLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
         additionalLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12.5).isActive = true
         additionalLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12.5).isActive = true
-
         iconContainer.translatesAutoresizingMaskIntoConstraints = false
         iconContainer.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 6).isActive = true
-        //iconContainer.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 6).isActive = true
         iconContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15).isActive = true
         iconContainer.heightAnchor.constraint(equalToConstant: size).isActive = true
         iconContainer.widthAnchor.constraint(equalToConstant: size).isActive = true
-
         label.translatesAutoresizingMaskIntoConstraints = false
         label.leadingAnchor.constraint(equalTo: iconContainer.trailingAnchor, constant: 10).isActive = true
         label.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12.5).isActive = true
         label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12.5).isActive = true
-
         iconImageView.heightAnchor.constraint(equalToConstant: imageSize).isActive = true
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
                 let horizontalConstraint = iconImageView.centerXAnchor.constraint(equalTo: iconContainer.centerXAnchor)

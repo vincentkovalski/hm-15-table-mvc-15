@@ -1,6 +1,5 @@
 import Foundation
 import UIKit
-
 struct Section {
     let options: [SettingsOptionType]
 }
@@ -24,12 +23,9 @@ struct SettingsSwitchOption {
     let icon: UIImage?
     let iconBackgroundColor: UIColor
     let handler: (() -> Void)
-    // дополнительное свойство
     var isOn: Bool
 }
-
 var models = [Section]()
-
 func configure() {
     models.append((Section(options: [
         SettingsOptionType.switchCell(model: SettingsSwitchOption(title: "Авиарежим", icon: UIImage(systemName: "airplane"), iconBackgroundColor: .systemOrange, handler: {

@@ -1,27 +1,20 @@
 import UIKit
-
 class ViewController: UIViewController {
-
-    // MARK: - Views
     private let tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.register(SettingTableViewCell.self, forCellReuseIdentifier: SettingTableViewCell.identifier)
         table.register(SwitchTableViewCell.self, forCellReuseIdentifier: SwitchTableViewCell.identifier)
         return table
     }()
-
-    // MARK: - Settings
     private func setupHierarchy() {
         view.addSubview(tableView)
     }
-
     private func setupView() {
 
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
     }
-
     private func setupLayout() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -29,8 +22,6 @@ class ViewController: UIViewController {
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,9 +32,5 @@ class ViewController: UIViewController {
         setupView()
         setupLayout()
     }
-
-    
-
-
 }
 
