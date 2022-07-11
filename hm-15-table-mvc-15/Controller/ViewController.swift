@@ -10,7 +10,6 @@ class ViewController: UIViewController {
         view.addSubview(tableView)
     }
     private func setupView() {
-
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
@@ -24,9 +23,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
         title = "Настройки"
-
         configure()
         setupHierarchy()
         setupView()
